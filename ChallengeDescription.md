@@ -1,6 +1,4 @@
-This code challenge should be a showcase of your programming skills. We encourage you to slightly over engineer your solution with good class design principles applied, good function names, variable names and a well structured program.
-
-You are welcome to complete the challenge in any language you are comfortable with, keeping in mind the above about showcasing your best skills. Typically we see submissions in Java, C#, JavaScript and Python.
+This challenge is implemented by C#, and I separate the challenge into the basic version and the extended version. The basic version only allows one robot placed on the table, extended version allows multiple robots placed on the table.
 
 ## Description
 
