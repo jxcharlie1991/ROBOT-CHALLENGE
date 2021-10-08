@@ -1,4 +1,4 @@
-﻿// This project is for the ioof's requirement.
+﻿// This project is for the ioof's recruitment.
 // Date 2/Oct/2021
 // Author Li Chai
 using System;
