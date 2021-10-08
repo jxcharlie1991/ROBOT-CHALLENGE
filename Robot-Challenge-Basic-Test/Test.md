@@ -1,4 +1,5 @@
 # Robot Challenge Basic Test
+Note: This program is not case sensitive, place == PLACE == PlAcE
 1. The first command only allows PLACE commands, so there would be three types invalid first command that cause the alarming
 ```
 MOVE
