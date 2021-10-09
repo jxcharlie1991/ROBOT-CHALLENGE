@@ -1,14 +1,15 @@
 # ROBOT-CHALLENGE
-This challenge is implemented by C#, and I separate the challenge into the basic version and the extended version. The basic version only allows one robot placed on the table, extended version allows multiple robots placed on the table. 
+This challenge is implemented by C#, and it allows multiple robots placed on the table. 
 
-[The basic version](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/tree/main/Robot-Challenge-Basic)
+[Code](https://github.com/jxcharlie1991/ROBOT-CHALLENGE)
 
-[The basic version's class diagram](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/ClassDiaForRobotChallengeBasic.png)
+Please download the coad, then open the file "ROBOT_CHALLENGE.sln".
 
-[Basic Robot Challenge Test](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/Robot-Challenge-Basic-Test/Test.md)
+[Class Diagram](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/CLASS-DIAGRAM-ROBOT-CHALLENGE.png)
 
-[The extended version](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/tree/main/Robot-Challenge-Extended)
+The class diahram could help understanding the object-oriented structure of this program.
 
-[The extended version's class diagram](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/ClassDiaForRobotChallengeExtended.png)
+[Test Samples](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/Robot-Challenge-Basic-Test/Test.md)
 
-[Extended Robot Challenge Test](https://github.com/jxcharlie1991/ROBOT-CHALLENGE/blob/main/Robot-Challenge-Extended-Test/Test.md)
+It program needs user to input commands, thus the test samples are integrated into a document. Just copy the code, then paste a part into the program, then press the enter for testing.
+
