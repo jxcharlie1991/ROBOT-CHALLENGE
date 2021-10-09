@@ -12,7 +12,7 @@ namespace ROBOT_CHALLENGE
             string input;
             Human.Instruction();
 
-            //Read Human user's first command.
+            //Execute Human user's first command.
             do
             {
                 input = Console.ReadLine();
