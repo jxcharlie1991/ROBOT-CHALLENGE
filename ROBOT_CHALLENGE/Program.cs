@@ -17,7 +17,7 @@ namespace ROBOT_CHALLENGE
             {
                 input = Console.ReadLine();
                 Human.ExecuteFirstCommand(input);
-               
+
             } while (Human.Comm != Enumerations.Command.place);
 
             //Read Human user's command

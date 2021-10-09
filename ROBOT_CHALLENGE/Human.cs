@@ -31,7 +31,7 @@ namespace ROBOT_CHALLENGE
             else if (userInput.StartsWith("place "))
             {
                 string[] placeLoc = userInput.Substring(6).Split(',');
-                if (int.TryParse(placeLoc[0], out int x) && int.TryParse(placeLoc[1], out int y) && Enum.IsDefined(typeof(Enumerations.Direction), placeLoc[2]))
+                if (placeLoc.Length == 3 && int.TryParse(placeLoc[0], out int x) && int.TryParse(placeLoc[1], out int y) && Enum.IsDefined(typeof(Enumerations.Direction), placeLoc[2]))
                 {
                     if (Ground.CheckOntable(x, y))
                     {
@@ -72,7 +72,7 @@ namespace ROBOT_CHALLENGE
             if (userInput.StartsWith("place "))
             {
                 string[] commLoc = userInput.Substring(6).Split(',');
-                if (int.TryParse(commLoc[0], out int x) && int.TryParse(commLoc[1], out int y) && Enum.IsDefined(typeof(Enumerations.Direction), commLoc[2]))
+                if (commLoc.Length == 3 && int.TryParse(commLoc[0], out int x) && int.TryParse(commLoc[1], out int y) && Enum.IsDefined(typeof(Enumerations.Direction), commLoc[2]))
                 {
                     if (Ground.CheckOntable(x, y))
                     {
