@@ -1,7 +1,0 @@
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\bin\Debug\ROBOT_CHALLENGE.exe.config
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\bin\Debug\ROBOT_CHALLENGE.exe
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\bin\Debug\ROBOT_CHALLENGE.pdb
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\obj\Debug\ROBOT_CHALLENGE.csprojAssemblyReference.cache
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\obj\Debug\ROBOT_CHALLENGE.csproj.CoreCompileInputs.cache
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\obj\Debug\ROBOT_CHALLENGE.exe
-C:\Users\Charlie\Documents\GitHub\ROBOT-CHALLENGE\ROBOT_CHALLENGE\obj\Debug\ROBOT_CHALLENGE.pdb

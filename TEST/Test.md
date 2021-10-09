@@ -1,116 +1,122 @@
-# Robot Challenge Extended Test
+# ROBOT CHALLENGE TEST SAMPLES
 Note: This program is not case sensitive, place == PLACE == PlAcE
-1. The first command only allows PLACE commands, so there would be three types invalid first command that cause the alarming
-```
-MOVE
 
-OUTCOME: INVALID
+This test samples includes two samples.
 
-PLACE 3,2,MOVE
+[Succeed Samples](#succeed-samples)
 
-OUTCOME: INVALID
+[Failed Samples](#failed-samples)
 
-PLACE 5,5,EAST
+- [First command is not PLACE](#first-command-is-not-place)
+- [Invalid command](#invalid-command)
+- [Robot is not on table](#robot-is-not-on-table)
+- [Robot is going to fall](#robot-is-going-to-fall)
 
-OUTCOME: INVALID
-```
-![First Invalid Command](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/FirstInvalidCommand.png)
-2. The following command allows all the commands, except invalid command
-```
-PLACE 3,4,EAST
-LEFT
-LETT
-
-OUTCOME: INVALID
-```
-![Invalid Command](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/InvalidCommand.png)
-3. If MOVE command require the robot falls off the table, there would be alarming
+## Succeed Samples
+a.
 ```
 PLACE 2,3,EAST
-MOVE
-MOVE
-MOVE
-
-OUTCOME: INVALID
-```
-![Falling Command](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/FallingCommand.png)
-4. When user inputs the invalid command, the program would give alarming, then ignore the invalid command.
-```
-PLACE 3,4,EAST
-LEFT
-LETT
-
-OUTCOME: INVALID
-REPORT
-
-OUTCOME: 3,4,NORTH  ACTIVE
-```
-
-```
-PLACE 1,2,NORTH
-MOVE
-MOVE
-MOVE
-
-OUTCOME: INVALID
-LEFT
-MOVE
-REPORT
-
-OUTCOME: 0,4,WEST  ACTIVE
-```
-
-![Invalid Command Would Ignore](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/InvalidCommandWouldIgnore.png)
-
-![Falling Command Would Ignore](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/FallingCommandWouldIgnore.png)
-5. Valid Command
-```
-PLACE 3,2,NORTH
-MOVE
-LEFT
-MOVE
-REPORT
-
-OUTCOME: 2,3,WEST  ACTIVE
-```
-
-```
-PLACE 3,2,EAST
-MOVE
+PLACE 1,1,WEST
+PLACE 0,4,NORTH
+PLACE 3,3,SOUTH
+ROBOT 3
 RIGHT
 MOVE
+MOVE
 REPORT
-
-OUTCOME: 4,1,SOUTH  ACTIVE
 ```
-![Valid1](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/Valid1.png)
-
-![Valid2](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/Valid2.png)
-5. Change Command allow user to active specific robot
+b.
 ```
-PLACE 3,2,EAST
-ROBOT 1 is added on the table.
-place 1,2,WEST
-ROBOT 2 is added on the table.
+PLACE 1,4,WEST
 PLACE 2,2,NORTH
-ROBOT 3 is added on the table.
-REPORT
-
-OUTCOME: ROBOT 1: 3, 2, EAST
-         ROBOT 2: 1, 2, WEST
-         ROBOT 3: 2, 2, NORTH    ACTIVE.
-
+PLACE 1,2,EAST
+PLACE 3,1,SOUTH
+PLACE 2,0,EAST
+ROBOT 1
+MOVE
+LEFT
 ROBOT 2
+RIGHT
+MOVE
+ROBOT 5
+LEFT
+MOVE
+MOVE
 REPORT
-
-OUTCOME: ROBOT 1: 3, 2, EAST
-         ROBOT 2: 1, 2, WEST    ACTIVE.
-         ROBOT 3: 2, 2, NORTH
-
-ROBOT 4
-
-OUTCOME: Please select a valid robot. There are only 3 robots on the desk
+```
+C.
+```
+PLACE 2,0,EAST
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+MOVE
+REPORT
 
 ```
-![Valid3](https://github.com/jxcharlie1991/ToyProject/blob/main/RobotChallenge/Robot-Challenge-Extended-Test/Valid3.png)
 
+## Failed Samples
+### First command is not PLACE
+a)
+```
+RIGHT
+```
+b)
+```
+MOVE
+```
+c)
+```
+REPORT
+```
+### Invalid command
+a)
+```
+PLACE 3,2,LEFT
+```
+b)
+```
+PLACE 1,4,WEST
+MOVEE
+```
+c)
+```
+PLACE 1,4,WEST
+ROBCT 2
+```
+d)
+```
+PLACE WEST,4,1
+```
+### Robot is not on table
+a)
+```
+PLACE 5,2,WEST
+```
+b)
+```
+PLACE -1,2,EAST
+```
+### Robot is going to fall
+a)
+```
+PLACE 1,2,EAST
+PLACE 4,4,WEST
+MOVE
+```
+b)
+```
+PLACE 1,1,WEST
+MOVE
+MOVE
+```
+c)
+```
+PLACE 2,3,NORTH
+PLACE 1,2,EAST
+ROBOT 1
+MOVE
+MOVE
+```
